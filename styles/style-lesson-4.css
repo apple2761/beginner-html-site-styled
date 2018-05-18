@@ -1,0 +1,57 @@
+/** L4: font  **/
+.lesson-4 h1 {
+font-size: 18px;
+font-weight: 900;
+}
+
+
+.lesson-4 p {
+
+  font-size: 80%;
+  /**
+  text-align: 對齊方式
+  可使用
+  1. 關鍵字：left right center justify
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+  */
+  text-align:left;
+
+  /**
+  text-indent: 縮排
+  可使用
+  1. 數值：0 10px 30% (父層框框寬度的30%)
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent
+  */
+  text-indent: 8px;
+
+  /**
+  white-space: 空白處理
+  設定空白鍵 ＆ Tab & \n(Enter) 換行方式
+  可使用
+  1. 關鍵字：normal(最常用)nowrap（不管父層）pre(直接再現HTML寫的樣子) pre-wrap（再現HTML也受父層限制） pre-line （再現HTML但忽略前方空白）
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+  */
+  white-space: normal;
+
+  /**
+  word-break: 換行方式
+  設定一行的最後一個詞該不該換行
+  可使用
+  1. 關鍵字：normal（保留完整字為最優先） break-all break-word（維持版型為最優先）
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/word-break
+  */
+  word-break: break-word;
+
+  /**
+  word-spacing: 詞彙間距離 letter-spacing:字母間距離
+  兩個詞之間的距離
+  可使用
+  1. 數值：10px 1% 1em;
+  */
+  word-spacing: 0px/**預設皆為一個字的大小，此處若設定為X，則詞距 為一字大小再加X **/;
+  line-height:120%;
+}
