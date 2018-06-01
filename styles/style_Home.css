@@ -1,59 +1,45 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
 html {
   font-size: 10px;
   font-family:'Open Sans', sans-serif;
+  background-color: #dddddd;
+}
+
+body{
+  margin-bottom: 300px;
 }
 
 h1 {
-  font-family: 'Roboto';
-  font-weight: 900;
-  font-size: 60px;
-  text-align: center;
+  font-family: 'Raleway';
+  font-weight:100;
+  font-size: 24px;
+  text-align:center;
   margin: 0;
   padding: 20px 0;
   color: #ffffff;
-  text-shadow: ;
 }
 
-p {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
 
 ul{
 list-style: none;
 }
 
 li{
-font-size: 16px;
-font-weight: 900;
-line-height: 2;
+font-size: 12px;
+font-weight: 500;
+line-height: 1.5;
 letter-spacing: 1px;
 }
 
 html {
-  background-color: #ffffff;
-}
-
-body {
-  width: 880px;
-  margin:40px;
   background-color: #dddddd;
-  padding: 30px 30px 30px 30px;
-  border: 0.1px dotted gray;
-  border-radius: 5px;
 }
 
 
-img {
-  display: block;
-  margin: 0 auto;
-  align-items:left;
-  padding: 30px;
-}
 
 /** L3: font  **/
-p {
+.brief {
   /**
   color: 文字顏色
   可使用
@@ -88,7 +74,7 @@ p {
   2. 相對父層數值：1.5em, 150%
   3. 相對根層數值：1.5rem (跟層：最上層>瀏覽器預設)
   */
-  font-size: 18px;
+  font-size: 16px;
 
   /**
   font-weight: 字重
@@ -114,7 +100,8 @@ p {
   1. 數值：18px, 3em
   2. 相對值： 150%, 1.5
   */
-  line-height: 1.5;
+  line-height: 2;
+  font-weight: 100;
 }
 
 /**

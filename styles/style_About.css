@@ -1,0 +1,39 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+html {
+  font-size: 10px;
+  font-family:'Roboto', sans-serif;
+  background-color: #dddddd;
+}
+
+.portrait {
+  display:inline-block;
+  margin: 40px 0 0 48px;
+  align-items:left;
+  width:40%;
+}
+
+
+.about{
+margin: 40px 32px 0 32px;
+display: inline-block;
+vertical-align: top;
+width:600px;
+}
+
+.about h1{
+  font-family:"Cormorant Garamond";
+  font-size:3rem;
+  font-weight: 400;
+  margin:0 0 16px 0;
+  color:#264d73;
+}
+
+.about h2{
+  font-size:1.125rem;
+  font-weight: 100;
+  line-height: 2rem;
+  color:#666666;
+  margin:0;
+  word-wrap: normal;
+}

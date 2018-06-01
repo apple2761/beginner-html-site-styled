@@ -1,0 +1,25 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+.topnav{
+  margin:32px 0 0 40px;
+}
+
+
+.topnav a{
+  text-decoration: none;
+  font-size:0.8rem;
+  font-weight:300;
+  padding:0 8px;
+  color:#264d73;
+}
+
+
+.topnav a:visited{
+color:#778899;
+}
+
+
+.topnav a:hover{
+background-color:#264d73;
+color:white;
+}

@@ -1,0 +1,95 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+
+html {
+  font-size: 10px;
+  font-family:'Roboto', sans-serif;
+  background-color: #dddddd;
+}
+
+
+/** ！！！重要！！！
+ * display: 元件的顯示類型
+ *          決定了一個元件要如何排版，包含左右、上層、下層的位置，以及尺寸、內外距的關係
+ *   常用值
+ *   1. block 上下堆疊（換行）、無法左右排列、唯一可寫長&寬
+ *   2. inline
+ *   3. inline-block
+ */
+
+.card {
+  display: inline-block;
+  width: 240px;
+  background-color:black;
+  margin:48px 16px 40px 48px;/*auto會讓內容水平置中，但不會垂直置中*/
+  vertical-align: top;
+  font-family: "Cormorant Garamond";
+}
+
+.card .image {
+  width: 100%;
+  height:inherit;
+}
+
+.card .image img {
+  width: 100%;
+}
+
+.card .name{
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
+  font-weight: 100;
+  padding:16px;
+  color:#C0C0C0;
+}
+
+.card:hover {
+    box-shadow: 6px 6px 12px  rgba(10,10,10,0.15);
+  }
+
+.card .name:hover{
+    color:white;
+    }
+
+/**
+ * padding: 元件與內容的距離
+ * 可以寫
+ *   1. 尺寸：8px; 0.5em
+ *   2. 百分比：2%;
+ *
+ *
+ * 重要！容易忘！
+ * box-sizing: 決定尺寸是內容的尺寸，還是邊界的尺寸
+ * 可以寫
+ *   1. border-box
+ *   2. content-box
+ *
+ */
+.card .info {
+  padding: 4px 8px;
+  /*也有以下屬性：padding-right padding-left */
+  box-sizing: border-box;
+}
+
+.card .info .name {
+  padding: 4px 0;
+  font-weight: 500;
+}
+
+.card .info .date {
+  color: grey;
+  padding: 2px 0;
+}
+
+/**
+ * margin: 元件與其他元件的距離
+ * 可以寫
+ *   1. 尺寸：8px; 0.5em
+ *   2. 百分比：2%;
+ *   3. auto; 代表含義：依照尺寸，自動填滿
+ *
+ */
+.card .info .description {
+  margin: 4px 0;
+  line-height: 1.5;
+}

@@ -1,12 +1,12 @@
 /** L4: font  **/
-.lesson-4 h1 {
-font-size: 18px;
-font-weight: 900;
+.intro h1 {
+font-size: 24px;
+font-weight: 100;
 }
 
 
-.lesson-4 p {
-
+.intro p {
+  font-family: 'Raleway' 'notosanstc';
   font-size: 80%;
   /**
   text-align: 對齊方式
@@ -52,6 +52,7 @@ font-weight: 900;
   可使用
   1. 數值：10px 1% 1em;
   */
-  word-spacing: 0px/**預設皆為一個字的大小，此處若設定為X，則詞距 為一字大小再加X **/;
-  line-height:120%;
+  word-spacing: 0px;/**預設皆為一個字的大小，此處若設定為X，則詞距 為一字大小再加X **/
+  line-height:180%;
+  letter-spacing: 1.5px;
 }
