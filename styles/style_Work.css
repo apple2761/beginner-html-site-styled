@@ -18,12 +18,19 @@ html {
  */
 
 .card {
-  display: inline-block;
+  display: block;
+  float:left;
   width: 240px;
   background-color:black;
   margin:48px 16px 40px 48px;/*auto會讓內容水平置中，但不會垂直置中*/
   vertical-align: top;
   font-family: "Cormorant Garamond";
+}
+
+.card:after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .card .image {
@@ -47,7 +54,7 @@ html {
     box-shadow: 6px 6px 12px  rgba(10,10,10,0.15);
   }
 
-.card .name:hover{
+.card:hover .name{
     color:white;
     }
 
@@ -92,4 +99,15 @@ html {
 .card .info .description {
   margin: 4px 0;
   line-height: 1.5;
+}
+
+.arrow{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+
+}
+
+.arrow img{
+width:40px;
 }
